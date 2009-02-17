@@ -1,0 +1,214 @@
+ /* listr!, directory browser -- dark stylesheet
+  Copyright MadX <madx@irrealia.org>
+  Copyright Irrealia Developpement Group
+  Licence: CeCILL (view : http://trac.irrealia.org/trac/Irrealia/licence)
+  http://trac.irrealia.org/trac/wiki/PHP/listr */
+
+body {
+	background-color: #202020;
+    color: #e0e0e0;
+	font: normal 1em sans-serif;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+a, a:visited {
+	color: #e0e0e0;
+	text-decoration: none;
+}
+
+a:active, a:hover, a:focus {
+	color: #e0e0e0;
+	background-color: black;
+	text-decoration: underline;
+}
+
+/* ------------ */
+
+h1 {
+	color: #808080;
+}
+
+h1 strong {
+	color: #555;
+}
+
+hr {
+	border: 1px solid #ccc;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 1em auto;
+	width: 90%;
+}
+
+td, th {
+	margin: 0px;
+	padding: 0.1em 0.7em;
+}
+
+th {
+	border-bottom: 2px solid #ccc;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:hover {
+	background-color: black;
+}
+
+.swapAlign {
+	text-align: left;
+}
+
+#footerBox {
+	background-color: #404040;
+	padding: 0.2em;
+	font-size: 0.8em;
+}
+
+#footerBox span {
+	font-style: italic;
+}
+
+/* Helper */
+
+#helpr {
+    display: block;
+    float: right;
+    font: bold 1.5em sans-serif;
+    margin-top: -1.5em;
+    width: 1.5em;
+    border: 1px outset #ccc;
+    text-align: center;
+}
+
+a#helpr:hover {
+    color: #002299;
+	text-decoration: none;
+}
+
+/* Code previewer */
+
+.wrapper {
+    width: 90%;
+    margin: 2% auto;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+.wrapper pre {
+    overflow: auto;
+}
+
+/* Lightbox stuff */
+
+#lightbox{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	}
+
+#imageContainer{
+	padding: 10px;
+	}
+
+#loading{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	}
+#hoverNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+	width: 49%;
+	height: 100%;
+	background: transparent url(../images/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(../images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(../images/nextlabel.gif) right 15% no-repeat; }
+
+
+#imageDataContainer{
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	}
+
+#imageData{
+	padding:0 10px;
+	}
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em;	}	
+		
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	background-color: #000;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	}
+	
+
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+
+* html>body .clearfix {
+	display: inline-block; 
+	width: 100%;
+	}
+
+* html .clearfix {
+	/* Hides from IE-mac \*/
+	height: 1%;
+	/* End hide from IE-mac */
+	}

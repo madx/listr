@@ -1,0 +1,32 @@
+LISTR - CHANGELOG
+
+================
+
+	v0.7
+	''''
+
+- Ajout de l'internationalisation (changez la constante LANG dans conf.php)
+- Ajout du répertoire .lang contenant les dictionnaires 
+  pour l'internationalisation
+- Ajout dans les sous-répertoires d'un lien " ../ " permettant de
+  retourner au répertoire parent.
+- Ajout de deux accesskeys: R et P pour Racine (Root) et Parent
+- Ajout des tabindex pour faciliter la navigation au clavier
+- Sources anglicisées et un peu recommentées
+- Légères modifications d'ordre purement graphique
+- Ajout d'une fonction pour formatter la chaîne du dictionnaire concernant le serveur
+
+================
+
+    v0.6
+    ''''
+
+- Correction de la sécurisation du chemin à parcourir, qui n'était en
+  fait pas sécurisé ( .../ permettait d'obtenir des répertoires parents)
+- Ajout de la licence GPL (fichier LICENCE de ce répertoire)
+- Ajout de la ligne renseignant sur la version
+- Ajout de la possibilité d'override de configuration avec un conf.override.php
+  placé dans le répertoire .conf
+- Petites modifications graphiques
+
+================
